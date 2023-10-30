@@ -1,0 +1,217 @@
+/* Place in your CSS file at the top of the document */
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+
+/* To suppress default border and styling and select alt box model*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  --darkBlue: #102542;
+  --orange: #f87060;
+  --lightBlue: #cdd7d6;
+  --beige: #b3a394;
+  background-color: #e8e8e8;
+}
+
+header {
+  background-color: var(--darkBlue);
+  color: white;
+  padding: 50px;
+  display: flex;
+}
+
+#logoContainer {
+  padding-right: 20px;
+  font-size: 40px;
+}
+#titleContainer {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+}
+
+#filterMenuContainer {
+  padding: 50px 0px 50px 50px;
+  width: 30%;
+}
+
+#filterMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#filterMenu h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#filterMenu h2 {
+  padding-top: 20px;
+}
+
+select {
+  display: block;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+option {
+  padding: 10px;
+}
+
+label {
+  font-size: 20px;
+}
+
+#error {
+  color: gray;
+  font-size: 40px;
+}
+
+#carCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 50px;
+}
+
+/* card css: https://www.w3schools.com/howto/howto_css_product_card.asp */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  /* height: 00px; */
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 var(--orange);
+}
+
+.card h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  color: var(--darkBlue);
+}
+
+.price {
+  color: var(--orange);
+  font-size: 30px;
+}
+
+.fullInfoButton {
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  padding: 12px;
+  margin: 20px;
+  color: white;
+  background-color: var(--darkBlue);
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+.fullInfoButton:hover {
+  background-color: var(--orange);
+}
+
+.carCardPic {
+  width: 100%;
+  height: auto;
+}
+
+.moreInfoCard {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--orange);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  padding-top: 17%;
+  /* CSS Animation: https://webcode.tools/css-generator/keyframe-animation */
+  animation: myAnim 0.3s ease 0s 1 normal forwards;
+}
+
+/* CSS Animation: https://webcode.tools/css-generator/keyframe-animation */
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.moreInfoCard h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.moreInfoCard h2 {
+  font-size: 35px;
+}
+
+.morePrice {
+  font-size: 30px;
+  margin: 5px;
+}
+
+.moreInfoTitle {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.moreInfoText {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #00000000;
+  border: none;
+  color: white;
+  font-size: 50px;
+}
+
+.closeButton:hover {
+  color: var(--darkBlue);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--darkBlue);
+  height: 70px;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

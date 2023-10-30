@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UsedCars.com</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- main JS file link -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/usedCars.js"></script>
+    <!-- for icons from FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a2769b4633.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="logoContainer"><i class="fa-solid fa-car"></i></div>
+      <div id="titleContainer">
+        <h1>UsedCars.com</h1>
+      </div>
+    </header>
+    <main>
+      <section id="filterMenuContainer">
+        <form id="filterMenu">
+          <h1>Filters:</h1>
+          <div id="years">
+            <h2>Year:</h2>
+            <label for="minYear">Min Year:</label>
+            <select name="minYear" id="minYear">
+              <option value="0">Any Year</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+            <!-- To select max year of car -->
+            <label for="maxYear">Max Year:</label>
+            <select name="maxYear" id="maxYear">
+              <option value="2030">Any Year</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+          </div>
+          <!-- Dropdown menu source: https://www.w3schools.com/tags/tag_select.asp -->
+          <!-- To select min year of car -->
+
+          <!-- For Selecting Car Make -->
+          <div id="Make">
+            <h2>Make:</h2>
+
+            <div id="bmw">
+              <input
+                type="checkbox"
+                class="make"
+                name="BMW"
+                id="BMW"
+                value="BMW"
+                checked="true"
+              />
+              <label for="BMW">BMW</label>
+            </div>
+            <div id="cadillac">
+              <input
+                type="checkbox"
+                class="make"
+                name="Cadillac"
+                id="Cadillac"
+                value="Cadillac"
+                checked="true"
+              />
+              <label for="Cadillac">Cadillac</label>
+            </div>
+
+            <div id="chevrolet">
+              <input
+                type="checkbox"
+                class="make"
+                name="Chevrolet"
+                id="Chevrolet"
+                value="Chevrolet"
+                checked="true"
+              />
+              <label for="Chevrolet">Chevrolet</label>
+            </div>
+
+            <div id="dodge">
+              <input
+                type="checkbox"
+                class="make"
+                name="Dodge"
+                id="Dodge"
+                value="Dodge"
+                checked="true"
+              />
+              <label for="Dodge">Dodge</label>
+            </div>
+
+            <div id="ford">
+              <input
+                type="checkbox"
+                class="make"
+                name="Ford"
+                id="Ford"
+                value="Ford"
+                checked="true"
+              />
+              <label for="Ford">Ford</label>
+            </div>
+
+            <div id="honda">
+              <input
+                type="checkbox"
+                class="make"
+                name="Honda"
+                id="Honda"
+                value="Honda"
+                checked="true"
+              />
+              <label for="Honda">Honda</label>
+            </div>
+
+            <div id="hyundai">
+              <input
+                type="checkbox"
+                class="make"
+                name="Hyundai"
+                id="Hyundai"
+                value="Hyundai"
+                checked="true"
+              />
+              <label for="Hyundai">Hyundai</label>
+            </div>
+
+            <div id="jaguar">
+              <input
+                type="checkbox"
+                class="make"
+                name="Jaguar"
+                id="Jaguar"
+                value="Jaguar"
+                checked="true"
+              />
+              <label for="Jaguar">Jaguar</label>
+            </div>
+
+            <div id="kia">
+              <input
+                type="checkbox"
+                class="make"
+                name="Kia"
+                id="Kia"
+                value="Kia"
+                checked="true"
+              />
+              <label for="Kia">Kia</label>
+            </div>
+
+            <div id="lexus">
+              <input
+                type="checkbox"
+                class="make"
+                name="Lexus"
+                id="Lexus"
+                value="Lexus"
+                checked="true"
+              />
+              <label for="Lexus">Lexus</label>
+            </div>
+
+            <div id="mazda">
+              <input
+                type="checkbox"
+                class="make"
+                name="Mazda"
+                id="Mazda"
+                value="Mazda"
+                checked="true"
+              />
+              <label for="Mazda">Mazda</label>
+            </div>
+
+            <div id="nissan">
+              <input
+                type="checkbox"
+                class="make"
+                name="Nissan"
+                id="Nissan"
+                value="Nissan"
+                checked="true"
+              />
+              <label for="Nissan">Nissan</label>
+            </div>
+
+            <div id="porsche">
+              <input
+                type="checkbox"
+                class="make"
+                name="Porsche"
+                id="Porsche"
+                value="Porsche"
+                checked="true"
+              />
+              <label for="Porsche">Porsche</label>
+            </div>
+
+            <div id="subaru">
+              <input
+                type="checkbox"
+                class="make"
+                name="Subaru"
+                id="Subaru"
+                value="Subaru"
+                checked="true"
+              />
+              <label for="Subaru">Subaru</label>
+            </div>
+
+            <div id="tesla">
+              <input
+                type="checkbox"
+                class="make"
+                name="Tesla"
+                id="Tesla"
+                value="Tesla"
+                checked="true"
+              />
+              <label for="Tesla">Tesla</label>
+            </div>
+
+            <div id="toyota">
+              <input
+                type="checkbox"
+                class="make"
+                name="Toyota"
+                id="Toyota"
+                value="Toyota"
+                checked="true"
+              />
+              <label for="Toyota">Toyota</label>
+            </div>
+
+            <div id="volkswagen">
+              <input
+                type="checkbox"
+                class="make"
+                name="Volkswagen"
+                id="Volkswagen"
+                value="Volkswagen"
+                checked="true"
+              />
+              <label for="Volkswagen">Volkswagen</label>
+            </div>
+          </div>
+          <!-- For Selecting Max Mileage -->
+          <label for="maxMileage"><h2>Mileage:</h2></label>
+          <select name="maxMileage" id="maxMileage">
+            <option value="300000">Any Mileage</option>
+            <option value="5000">Under 5,000</option>
+            <option value="10000">Under 10,000</option>
+            <option value="15000">Under 15,000</option>
+            <option value="20000">Under 20,000</option>
+            <option value="25000">Under 25,000</option>
+            <option value="30000">Under 30,000</option>
+            <option value="40000">Under 40,000</option>
+            <option value="50000">Under 50,000</option>
+            <option value="60000">Under 60,000</option>
+            <option value="70000">Under 70,000</option>
+            <option value="80000">Under 80,000</option>
+            <option value="90000">Under 90,000</option>
+            <option value="100000">Under 100,000</option>
+            <option value="150000">Under 150,000</option>
+            <option value="200000">Under 200,000</option>
+          </select>
+          <div class="carColor">
+            <h2>Color:</h2>
+            <div id="Silver">
+              <input
+                type="checkbox"
+                class="color"
+                name="Silver"
+                id="Silver"
+                value="Silver"
+                checked="true"
+              />
+              <label for="Silver">Silver</label>
+            </div>
+            <div id="White">
+              <input
+                type="checkbox"
+                class="color"
+                name="White"
+                id="White"
+                value="White"
+                checked="true"
+              />
+              <label for="White">White</label>
+            </div>
+            <div id="black">
+              <input
+                type="checkbox"
+                class="color"
+                name="Black"
+                id="Black"
+                value="Black"
+                checked="true"
+              />
+              <label for="Black">Black</label>
+            </div>
+            <div id="blue">
+              <input
+                type="checkbox"
+                class="color"
+                name="Blue"
+                id="Blue"
+                value="Blue"
+                checked="true"
+              />
+              <label for="Blue">Blue</label>
+            </div>
+            <div id="red">
+              <input
+                type="checkbox"
+                class="color"
+                name="Red"
+                id="Red"
+                value="Red"
+                checked="true"
+              />
+              <label for="Red">Red</label>
+            </div>
+            <div id="gray">
+              <input
+                type="checkbox"
+                class="color"
+                name="Gray"
+                id="Gray"
+                value="Gray"
+                checked="true"
+              />
+              <label for="Gray">Gray</label>
+            </div>
+            <div id="green">
+              <input
+                type="checkbox"
+                class="color"
+                name="Green"
+                id="Green"
+                value="Green"
+                checked="true"
+              />
+              <label for="Green">Green</label>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="carCardsContainer">
+        <!-- how to make product card display layout: https://www.w3schools.com/howto/howto_css_product_card.asp-->
+        <!-- <div class="card">
+          <img
+            src="./img/ToyotaCamry.webp"
+            alt="Toyota Camry Picture"
+            class="carCardPic"
+          />
+          <h1>2018 Toyota Camry</h1>
+          <p class="price">$18,000</p>
+          <p>30,000 mi.</p>
+          <p><button>Full Info</button></p>
+          <div class="moreInfoCard">
+            <h1>2018</h1>
+            <h2>Toyota Camry</h2>
+            <p class="morePrice">$18,000</p>
+            <p class="moreInfoTitle">Color:</p>
+            <p class="moreInfoText">Silver</p>
+            <p class="moreInfoTitle">Gas Mileage:</p>
+            <p class="moreInfoText">25 mpg city, 35 mpg highway</p>
+            <button class="closeButton">CLOSE</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <footer>
+      <div id="footerText">
+        <p>©2023 UsedCars.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
