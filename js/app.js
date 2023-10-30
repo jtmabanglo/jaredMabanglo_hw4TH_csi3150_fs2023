@@ -117,6 +117,7 @@ addEventListener("input", (e) => {
     ) {
       // for filtering by Make
       for (let j = 0; j < selectMake.length; j++) {
+        // checked property= https://www.w3schools.com/jsref/prop_checkbox_checked.asp
         if (selectMake[j].checked) {
           if (selectMake[j].value === car.make) {
             // for filtering by color
@@ -139,32 +140,3 @@ addEventListener("input", (e) => {
   clearCards();
   displayCards();
 });
-
-// const checkMakeB = document.querySelector("#checkAllMake");
-// const uncheckMakeB = document.querySelector("#uncheckAllMake");
-// const checkColorB = document.querySelector("#checkAllColor");
-// const uncheckColorB = document.querySelector("#uncheckAllColor");
-
-// checkMakeB.addEventListener("click", (e) => {
-//   for (let k = 0; k < selectMake.length; k++) {
-//     selectMake[k].checked == true;
-//   }
-// });
-
-// uncheckMakeB.addEventListener("click", (e) => {
-//   for (let k = 0; k < selectMake.length; k++) {
-//     selectMake[k].checked == false;
-//   }
-// });
-
-// checkColorB.addEventListener("click", (e) => {
-//   for (let k = 0; k < selectColor.length; k++) {
-//     selectColor[k].checked == true;
-//   }
-// });
-
-// uncheckColorB.addEventListener("click", (e) => {
-//   for (let k = 0; k < selectColor.length; k++) {
-//     selectColor[k].checked == false;
-//   }
-// });
